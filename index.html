@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bienvenido</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="left">
+            <div>
+            <h1>Bienvenido</h1>
+            
+                <button onclick="mostrar1()">Iniciar Sesión</button>
+                <button onclick="mostrar2()">Crear Cuenta</button>
+            </div>
+        </div>
+
+        <div class="right">
+            <section class="iniciarSesion" id="uno">
+                <label for="nombre">Nombre de Usuario</label> <br>
+                <input type="text" required id="nombre4"> <br> <br>
+                <label for="password">Contraseña</label> <br>
+                <input type="password" required id="contraseña4"><br>
+                <button onclick="iniciarSesion()">Iniciar Sesion</button>
+            </section>
+
+            <section class="crearUsuario" id="dos">
+                <label for="nombre">Nombre de Usuario</label> <br>
+                <input type="text" required id="nombreCreado"> <br> <br>
+                <label for="password">Contraseña</label> <br> 
+                <input type="password" required id="passwordCreado"><br><br>
+                <label for="password2">Confirmar Contraseña</label> <br> 
+                <input type="password" required id="confirmacion"><br>
+                <button onclick="crearUsuario()">Crear Usuario</button>
+            </section>
+
+            <section class="bienvenido">
+                <h1>Bienvenido</h1>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
